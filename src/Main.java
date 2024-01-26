@@ -2,18 +2,23 @@ public class Main {
     public static void main(String[] args) {
 
         BikeImpl electricBike = new ElectricBike("EBike 2000");
-        navigationImpl mountainBike = new MountainBike("Scott X4");
+        navigationImpl mountainBike = new MountainBike("Scott x4");
+        BikeImpl threeWheel = new ThreeWheeler("Stiga Super");
 
         fastForward(electricBike);
         stopping(electricBike);
 
         upTheHill(mountainBike);
         throughTheWoods(mountainBike);
+
+        fastForward(threeWheel);
+        stopping(threeWheel);
     }
 
-    public static void fastForward(BikeImpl bike) {
-        bike.plinga();
-        bike.lysa();
+    public static void fastForward(BikeImpl ebike) {
+        ebike.plinga();
+        ebike.lysa();
+
     }
 
     public static void stopping(BikeImpl bike) {
