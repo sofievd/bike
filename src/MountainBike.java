@@ -2,8 +2,9 @@ public record MountainBike(String name) implements BikeImpl, navigationImpl {
 
 
     @Override
-    public void plinga() {
+    public String plinga() {
         System.out.println("Brrr..brrr..");
+        return null;
     }
 
     @Override

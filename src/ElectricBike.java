@@ -1,12 +1,11 @@
-public class ElectricBike implements BikeImpl, Repairable, navigationImpl {
-    private String name;
+public record ElectricBike(String name) implements BikeImpl, Repairable,
+        navigationImpl {
 
-    public ElectricBike(String name) {
-        this.name = name;
-    }
+
     @Override
-    public void plinga() {
+    public String plinga() {
         System.out.println("pling...pling...");
+        return null;
     }
 
     @Override
@@ -47,5 +46,13 @@ public class ElectricBike implements BikeImpl, Repairable, navigationImpl {
     @Override
     public void turnRight() {
         System.out.println("Turning right");
+    }
+
+    public boolean isMoving() {
+        return true;
+    }
+
+    public Object getFlatTireStatus() {
+        return null;
     }
 }

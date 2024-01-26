@@ -1,8 +1,8 @@
 public record ThreeWheeler(String name) implements BikeImpl, navigationImpl, Repairable {
 
     @Override
-    public void plinga() {
-        System.out.println("Meep..meep..");
+    public String plinga() {
+        return "Meep..meep..";
     }
 
     @Override

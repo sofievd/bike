@@ -1,5 +1,5 @@
 public interface BikeImpl {
-    void plinga();
+    String plinga();
 
     void bromsa();
 
