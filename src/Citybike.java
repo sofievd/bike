@@ -1,3 +1,12 @@
+/*
+ * Citybike
+ *
+ *
+ *Sofie Van Dingenen
+ *
+ * V.1 2024-01-26
+ *
+ * */
 public class Citybike implements BikeImpl, NavigationImpl{
       private static final String sound = "tuut";
 
