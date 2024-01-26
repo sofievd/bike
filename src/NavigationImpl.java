@@ -1,4 +1,4 @@
-public interface navigationImpl {
+public interface NavigationImpl {
     void useGPS();
 
     void turnLeft();
